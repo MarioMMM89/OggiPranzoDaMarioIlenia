@@ -1,0 +1,125 @@
+/**************GENERAL******************/
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+	background-image: url(sfondo2.jpg);
+	background-repeat: repeat;
+}
+html {
+	font-size: 100%;
+}
+a {
+	text-decoration: none;
+}
+/**************HEADER*******************/
+header {
+	background-color: #ffa64d;
+	text-align: left;
+	padding: 5px;
+	border-bottom: solid 2px #b35900;
+	border-bottom-right-radius: 150px;
+	width: 75%;
+
+}
+
+.logo-container {
+	border-bottom:solid 2px #b35900;
+	border-bottom-right-radius: 100px;
+}
+.logo-container img{margin-left: 15%;}
+h1 {
+	font-size: 150%;
+	text-shadow: 1px 1px 2px #ffdab3;
+	margin-left: 7.5%;
+	margin-right: 15%;
+}
+
+h2 {
+	font-size: 120%;
+	padding: 3px;
+	text-shadow: 1px 1px 2px #ffdab3;
+	margin-left: 7.5%;
+	margin-right: 15%;
+}
+.logo-container img:hover {
+	opacity: 0.3;
+	transition: opacity 0.4s;
+}
+#homeLink {
+	color: black;
+	font-weight: bold;
+	text-align: left;
+	background-color: #ffa64d;
+	display: block;
+	width: 30%;
+	font-size: 150%;
+	text-shadow: 0px 0px 3px #ffdab3, 0px 0px 6px #ffdab3, 0px 0px 9px #ffdab3; 
+	padding: 10px 10px 10px 7.5%;
+	margin-bottom: 10px;
+	border-bottom-right-radius: 150px;
+}
+#homeLink:hover {
+	background-color:  #ffdab3;
+	transition: background-color 1s;
+
+}
+/************MAIN***********************/
+.picture img {
+	width: 100%;
+	border: 1px, solid, transparent;
+	border-radius: 50%;
+}
+.picture img:hover {
+	border-radius: 25%;
+	width: 95%;
+	transition: border-radius 1s, width 1s 0.1s;
+}
+.picture {
+	margin: 30px 30px;
+	width: 40%;
+	display: inline-block;
+	float:right;
+}
+.ingredienti {
+	margin-left: 5%;
+	display: inline-block;
+	width: 40%;
+	font-size: 120%;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+.procedimento {
+	margin-left: 5%;
+	display: inline-block;
+	width: 40%;
+	font-size: 120%;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+/*************FOOTER******************/
+footer {
+	margin-top: 10%;	
+	display: block;
+	text-align: center;
+}
+footer img:hover {
+	opacity: 0.4;
+	transition: opacity 0.6s;
+}
+/************MEDIA QUERIES*************/
+@media (max-width: 650px) {
+	.picture {
+		display: block;
+		width: 80%;
+	}
+	.ingredienti {
+		display: block;
+		width: 80%;
+	}
+	.procedimento {
+		display: block;
+		width: 80%;
+	}
+}

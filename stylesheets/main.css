@@ -1,0 +1,120 @@
+/**************GENERAL******************/
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+	background-image: url(sfondo2.jpg);
+	background-repeat: repeat;
+}
+html {
+	font-size: 80%;
+}
+a {
+	text-decoration: none;
+}
+/**************HEADER*******************/
+header {
+	background-color: #ffa64d;
+	text-align: center;
+	padding: 5px;
+	border-bottom: solid 2px transparent;
+	border-bottom-right-radius: 150px;
+	border-bottom-left-radius: 150px;
+}
+
+.logo-container {
+	border-bottom:solid 2px #b35900;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+h1 {
+	font-size: 150%;
+	text-shadow: 1px 1px 2px #ffdab3;
+}
+
+h2 {
+	font-size: 120%;
+	padding: 3px;
+	text-shadow: 1px 1px 2px #ffdab3;
+}
+.logo-container img:hover {
+	opacity: 0.3;
+}
+/*****************GALLERY*********************/
+
+#gallery img{
+	width: 100%;
+	border-radius: 10%;
+}
+#gallery .item{
+	font-size: 150%;
+	width: 50%;
+	padding: 8px;
+	float: left;
+}
+#gallery .caption {
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #ffdab3;
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+}
+
+#gallery .caption p {
+	margin: 0;
+} 
+/*********************FOOTER*********************/
+
+footer {
+	text-align: center;
+}
+footer.main {
+	clear: both;
+}
+/***************animazione***********************/
+#gallery img{
+	border: 10px solid transparent;
+}
+#gallery img:hover{
+	border-top-color: #ffdab3;
+	border-right-color: #ffdab3;
+	border-bottom-color: #ffdab3;
+	border-left-color: #ffdab3;
+	transition: border-top-color 0.3s linear, 
+	border-right-color 0.3s linear 0.15s,
+	border-bottom-color 0.3s linear 0.20s,
+	border-left-color 0.3s linear 0.25s;
+}
+#gallery img:active {
+	width: 100%;
+	border-radius: 50%;
+	transition: width 0.3s, border-radius 0.3s;
+}
+/******************MEDIA QUERIES*****************/
+@media (min-width: 900px) {
+	#gallery .item:hover {
+	opacity: 0.8;
+	}
+
+	#gallery .item {
+		transition: opacity 1s;
+	}
+	#gallery {
+		margin-left: 10%;
+	}
+
+}
+
+@media (min-width: 768px) {
+	#gallery .item {
+		width: 30%;
+	}
+
+	#gallery .item:nth-child(4n + 1) {
+		clear: left;
+	}
+
+}
